@@ -175,19 +175,27 @@ y = [-elem for elem in [278, 262, 259, 259, 258, 258, 256, 236, 211, 204, 202, 2
 
 plt.figure(1)
 Plot_spline(x_up, y_up, 0)
+plt.savefig("images/cubic_spline.png", dpi=300, bbox_inches="tight")
+
 plt.figure(2)
-Plot_parametric_spline(x, y ,0)
+Plot_parametric_spline(x, y, 0)
+plt.savefig("images/parametric_spline.png", dpi=300, bbox_inches="tight")
+
 plt.figure(3)
 Plot_first_derivative_spline(x_up, y_up, 0)
+plt.savefig("images/first_derivative.png", dpi=300, bbox_inches="tight")
+
 plt.figure(4)
 Plot_second_derivative_spline(x_up, y_up, 0)
+plt.savefig("images/second_derivative.png", dpi=300, bbox_inches="tight")
+
 plt.figure(5)
 Lagrange(x_up, y_up)
+plt.savefig("images/lagrange.png", dpi=300, bbox_inches="tight")
+
 plt.figure(6)
-plt.scatter(x_up, y_up, color = 'red')
-plt.xlim(min(x_up)-50, max(x_up)+50)
-plt.ylim(min(y_up)-100, max(y_up)+100)
+plt.scatter(x_up, y_up, color='red')
+plt.xlim(min(x_up) - 50, max(x_up) + 50)
+plt.ylim(min(y_up) - 100, max(y_up) + 100)
 plt.grid()
-
-plt.show()
-
+plt.savefig("images/nodes.png", dpi=300, bbox_inches="tight")
